@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4ddec;
+    font-family: "BD Cartoon Shout";
+    color: #b05ba4;
+    text-transform: capitalize;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.father-menu{
+    width: 40%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.father-menu nav{
+    background-color: #f4c140;
+    width: 100%;
+    /*margin: 0 auto;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    box-shadow: 0 1px 5px 1px #b05ba4;
+}
+
+
+.father-menu ul{
+    display: flex;
+    list-style: none;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.father-menu a{
+    text-decoration: none;
+    opacity: 70%;
+    transition: 150ms;
+}
+
+.title{
+    padding-block: 3rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.title h1{
+    font-size: 3vw;
+}
+
+.title span{
+    opacity: 70%;
+}
+
+.father-menu a:hover{
+    border-bottom: solid 2px #f4ddec;
+    opacity: 100%;
+}
+
+.animation{
+    width: 100%;
+}
+
+.all-box{
+    padding-inline: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.all-box img{
+    width: 100%;
+}
+
+.all-box div{
+    box-shadow: 0 1px 5px 1px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.button{
+    padding-inline: 4rem;
+    padding-block: 1rem;
+    border: 0;
+    background-color: #f4c140;
+    border-radius: .5rem;
+    font-family: "BD Cartoon Shout";
+    color: #b05ba4;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #f4c140;
+    padding-inline: 20%;
+    padding-block: 2rem;
+}
+
+.footer{
+    border-bottom: solid 2px #b05ba4;
+    display: flex;
+    gap: 8rem;
+    align-self: center;
+}
+
+.footer > div{
+
+}
+
+.target{
+    padding-block: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 1rem;
+}
+
+.target a{
+    text-decoration: none;
+    opacity: 60%;
+    transition: 200ms;
+    font-size: 1vw;
+}
+
+.target a:hover{
+    opacity: 100%;
+}
+
+.c-right{
+    text-align: center;
+    padding-top: 2rem;
+    opacity: 70%;
+    font-size: .8vw;
+}
+
