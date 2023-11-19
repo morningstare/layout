@@ -1,0 +1,506 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {}
+
+h1 {
+    font-size: 50px;
+}
+
+
+.father {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+}
+
+:root {
+    --color: rgb(170, 169, 169);
+    --width: 81%;
+    --width-2: 62%;
+}
+
+
+header {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    /* background-color: red; */
+}
+
+.menu {
+    width: 100%;
+    height: 10%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    color: var(--color);
+}
+
+
+header img {
+    z-index: 10000;
+    width: 90%;
+    height: 70%;
+}
+
+.studio {
+    width: var(--width);
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.studio>div {
+
+    width: 50%;
+    height: 100%;
+}
+
+.part-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.part-1>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 400px;
+}
+
+.part-1 span:nth-child(1) {
+    color: var(--color);
+}
+
+.part-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.part-1 button {
+    width: 130px;
+    height: 40px;
+    border-radius: 2rem;
+    border: red 2px solid;
+    color: red;
+}
+
+.part-2 span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    height: 90%;
+    background-color: aquamarine;
+    opacity: 15%;
+}
+
+
+.provided {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    height: 60vh;
+    /* background-color: red; */
+}
+
+
+.p-head {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+.p-head p {
+    font-size: 50px;
+    text-align: center;
+    width: 300px;
+}
+
+.p-box {
+    width: 100%;
+    height: 80%;
+    /* background-color: orange; */
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.p-box>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding-inline: 2rem;
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 1px 5px 1px rgb(230, 228, 228);
+}
+
+.p-box i {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(253, 113, 207);
+    border-radius: 100%;
+}
+
+.p-box>div div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+
+.knowlage {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width-2);
+    height: 70vh;
+    /* background-color: red; */
+}
+
+
+.knowlage>div {
+    height: 100%;
+}
+
+
+.part-3 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.part-3 p {
+    font-size: 50px;
+    width: 450px;
+}
+
+.part-3 span:nth-child(3) {
+    width: 400px;
+    text-align: right;
+}
+
+.part-3 span:nth-child(1) {
+    color: red;
+}
+
+
+.part-3 span:nth-child(3)::before {
+    padding-right: .5rem;
+    content: "______";
+    color: red;
+}
+
+.part-4 {
+    position: relative;
+    width: 60%;
+}
+
+.part-4 img {
+    margin-left: 2rem;
+    z-index: 100000;
+    width: 70%;
+    height: 100%;
+}
+
+.position-2 {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 80%;
+    background-color: rgb(230, 56, 91);
+}
+
+.do-you-know {
+    position: relative;
+    display: flex;
+    width: var(--width-2);
+    height: 70vh;
+    /* background-color: red; */
+}
+
+.do-you-know img {
+    width: 90%;
+    height: 100%;
+}
+
+
+.part-5 {
+    width: 50%;
+    height: 100%;
+}
+
+.position-3 {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    transform: translate(0, -50%);
+}
+
+.position-3 span {
+    font-size: 50px;
+}
+
+.position-3 p {
+    text-align: center;
+    width: 250px;
+    font-size: 12px;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 30vh;
+    /* background-color: red; */
+    gap: 1rem;
+}
+
+.explore p {
+    font-size: 25px;
+}
+
+.explore span {
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+}
+
+.line-aqua::after {
+    content: '_______';
+    color: aqua;
+}
+
+.about {
+    display: flex;
+    width: var(--width-2);
+    height: 70vh;
+    background-color: rgb(183, 245, 245, 0.2);
+}
+
+
+.part-6 {
+    text-align: left;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.part-7 {
+    display: flex;
+    width: 45%;
+    height: 100%;
+}
+
+.part-6 p {
+    font-size: 50px;
+    width: 400px;
+}
+
+.part-6 p span {
+    color: var(--color);
+}
+
+
+
+.part-7 img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    width: var(--width-2);
+
+}
+
+
+.want-to-work {
+    /* background-color: aqua; */
+    background-color: white;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.want-to-work span {
+    font-size: 50px;
+}
+
+.want-to-work button {
+    width: 130px;
+    height: 40px;
+    background-color: rgb(250, 79, 79);
+    color: white;
+    border-radius: 2rem;
+    outline: 0;
+    border: 0;
+}
+
+.want-to-work>div:nth-child(1) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    /* background-color: rebeccapurple; */
+}
+
+.want-to-work>div:nth-child(2) {
+    width: 30%;
+}
+
+.join {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(183, 245, 245, 0.2);
+}
+
+.j-part-1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.j-part-1>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.j-part-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.j-part-2>div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.j-part-2 span {
+    font-size: 35px;
+}
+
+.j-part-1 > div span:nth-child(1){
+    font-size: 35px;
+    width: 400px;
+}
+
+.j-part-1 p{
+    color: var(--color);
+    font-size: 12px;
+}
+
+.j-part-1 input{   
+    width: 200px;
+    height: 40px;
+    border-radius: 2rem;
+    outline: 0;
+    border:solid 2px gray;
+}
+
+
+.j-part-1 input::placeholder{
+    text-align: center;
+}
+
+.j-part-1 button{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    border: 0;
+    border-radius: 2rem;
+}
+
+.end{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.end > div:nth-child(3) span{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: red;
+}
+
+
+.end > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.end i{
+    font-size: 50px;
+}
